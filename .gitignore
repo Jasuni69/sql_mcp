@@ -5,3 +5,12 @@ __pycache__/
 dist/
 build/
 .venv/
+
+# Database analysis artifacts (extracted from production)
+analysis_report.md
+dataflow.md
+proc_definitions.txt
+view_definitions.txt
+
+# Local settings with credentials
+.claude/settings.local.json
