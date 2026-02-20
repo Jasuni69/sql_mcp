@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "azure-sql-mcp"
+version = "0.1.0"
+description = "MCP server for Azure SQL Database"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+    "pyodbc>=5.0.0",
+]
+
+[project.scripts]
+azure-sql-mcp = "azure_sql_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/azure_sql_mcp"]
